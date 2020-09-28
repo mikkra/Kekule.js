@@ -48,6 +48,14 @@ Kekule.Indigo = {
 	HELPER_SCRIPT_FILE: 'indigoAdapter.js',
 	/** @private */
 	_enableFuncs: [],
+	getRoot: function()
+	{
+		return $root;
+	},
+	setRoot: function(root)
+	{
+		$root = root;
+	},
 	isScriptLoaded: function()
 	{
 		return EU.isSupported(indigoInitOptions.moduleName)

@@ -20,6 +20,14 @@ Kekule.EmscriptenUtils = {
 	{
 		return $root[moduleName || EU.DEF_MODULE_NAME];
 	},
+	getRoot: function()
+	{
+		return $root;
+	},
+	setRoot: function(root)
+	{
+		$root = root;
+	},
 	isSupported: function(moduleName)
 	{
 		return (typeof(EU._getActualModule(moduleName)) !== 'undefined');
